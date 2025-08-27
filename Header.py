@@ -3,7 +3,7 @@
 Solution:       Lab #.#: <name of lab>
 -----------------------------------------------------------------------------
 Developer:      Zen Toppenberg
-Course:         Intro to Programming & Logic – CITC-1301
+Course:         Intro to Programming & Logic – CITC-1301-H91
 Creation Date:  8/27/25)
 Last Mod Date:  8/27/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
