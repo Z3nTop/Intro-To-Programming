@@ -20,3 +20,14 @@ Description of output:
 #Askes the user for infoamtuon about thier charater
 
 print("Wellcome to the world of DND")
+name = input("Let's start with your name ")
+level = int(input("What level are you? "))
+hp = int(input("How many hit points do you have? "))
+gold = int(input("How much gold do you have? "))
+
+#display the charoter info
+print("Here is your character sheet")
+print("Name:", name)
+print("Level:", level)
+print("Hit points: ", hp)
+print("Gold: ", gold)
