@@ -4,15 +4,45 @@ Solution:       Lab #.#: <name of lab>
 -----------------------------------------------------------------------------
 Developer:      Zen Toppenberg
 Course:         Intro to Programming & Logic – CITC-1301-H91
-Creation Date:  8/27/25)
-Last Mod Date:  8/27/25)
+Creation Date:  9/12/25)
+Last Mod Date:  9/12/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
-Purpose - <general description of program's purpose>
+Purpose - Convert human years to dog years
 -----------------------------------------------------------------------------
 Description of input:
-<short description of program's inputs>
+asks for a number of human years to be converted to dog years
 Description of output:
-<short description of program's outputs>
+Outputs the number of human years converted to dog years
 -----------------------------------------------------------------------------
+'''
+#ask the user for an input for human years
+human_years = float(input("enter the number of human years to do converte to dog years "))
+
+if human_years < 0:
+    print("Error try agian")
+else:
+    if human_years >= 1:
+        dog_years = 15 * human_years
+    if-else human_years >= 2:
+        human_years 15+(9*(human_years-1))
+
+
+'''
+pseudocode
+INPUT human years
+
+IF human years is less than zero THEN
+	OUTPUT error message
+ELSE
+	IF human years is less than or equal to 1 THEN
+		LET dog age equal 15 multiplied by human years
+	ELSE IF human years is less than or equal to 2 THEN
+		LET dog age equal 15 plus 9 multiplied by (human years minus 1)
+	ELSE
+		LET dog age equal 15 plus 9 plus 5 multiplied by (human years minus 2)
+	END IF
+
+	OUTPUT dog age
+END IF
 '''
