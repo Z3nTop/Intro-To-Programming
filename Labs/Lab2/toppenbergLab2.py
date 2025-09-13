@@ -19,14 +19,19 @@ Outputs the number of human years converted to dog years
 #ask the user for an input for human years
 human_years = float(input("enter the number of human years to do converte to dog years "))
 
+
+#Convets the number of human years to dog years
 if human_years < 0:
-    print("Error try agian")
+    print("Error input can not be less then 0")
 else:
     if human_years >= 1:
         dog_years = 15 * human_years
-    if-else human_years >= 2:
-        human_years 15+(9*(human_years-1))
+    elif human_years >= 2:
+        human_years = 15+9 * (human_years - 1)
+    else: 
+        dog_years = 15+9 + 5 * (human_years - 2)
 
+print(human_years, "would be", dog_years, "in dog years")
 
 '''
 pseudocode
