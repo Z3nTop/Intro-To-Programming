@@ -23,12 +23,12 @@ human_years = float(input("enter the number of human years to do converte to dog
 if human_years < 0:
     print("Error input can not be less then 0")
 else:
-    if human_years >= 1:
+    if human_years <= 1:
         dog_years = 15 * human_years
-    elif human_years >= 2:
-        human_years = 15+9 * (human_years - 1)
+    elif human_years <= 2:
+        dog_years = 15 + 9 * (human_years - 1)
     else: 
-        dog_years = 15+9 + 5 * (human_years - 2)
+        dog_years = 15 + 9 + 5 * (human_years - 2)
 
 #Tells the use the number of human years converted to dog years
 print(human_years, "would be", dog_years, "in dog years")
