@@ -17,7 +17,7 @@ Outputs the number of human years converted to dog years
 -----------------------------------------------------------------------------
 '''
 #ask the user for an input for human years
-human_years = float(input("enter the number of human years to do converte to dog years "))
+human_years = float(input("enter the number of human years to converte to dog years "))
 
 #Convets the number of human years to dog years
 if human_years < 0:
@@ -30,24 +30,3 @@ else:
     else: 
             dog_years = 15 + 9 + 5 * (human_years - 2)
     print(human_years, "would be", dog_years, "in dog years")
-
-
-
-'''
-pseudocode
-INPUT human years
-
-IF human years is less than zero THEN
-	OUTPUT error message
-ELSE
-	IF human years is less than or equal to 1 THEN
-		LET dog age equal 15 multiplied by human years
-	ELSE IF human years is less than or equal to 2 THEN
-		LET dog age equal 15 plus 9 multiplied by (human years minus 1)
-	ELSE
-		LET dog age equal 15 plus 9 plus 5 multiplied by (human years minus 2)
-	END IF
-
-	OUTPUT dog age
-END IF
-'''
