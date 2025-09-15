@@ -1,11 +1,11 @@
 ''' 
 -----------------------------------------------------------------------------
-Solution:       Lab #.#: <name of lab>
+Solution:       toppenbergLab2
 -----------------------------------------------------------------------------
 Developer:      Zen Toppenberg
 Course:         Intro to Programming & Logic – CITC-1301-H91
 Creation Date:  9/12/25)
-Last Mod Date:  9/12/25)
+Last Mod Date:  9/15/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
 Purpose - Convert human years to dog years
@@ -24,14 +24,14 @@ if human_years < 0:
     print("Error input can not be less then 0")
 else:
     if human_years <= 1:
-        dog_years = 15 * human_years
+            dog_years = 15 * human_years
     elif human_years <= 2:
-        dog_years = 15 + 9 * (human_years - 1)
+            dog_years = 15 + 9 * (human_years - 1)
     else: 
-        dog_years = 15 + 9 + 5 * (human_years - 2)
+            dog_years = 15 + 9 + 5 * (human_years - 2)
+    print(human_years, "would be", dog_years, "in dog years")
 
-#Tells the use the number of human years converted to dog years
-print(human_years, "would be", dog_years, "in dog years")
+
 
 '''
 pseudocode
