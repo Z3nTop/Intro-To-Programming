@@ -16,6 +16,11 @@ Description of output:
 How much money the user will have in the number of years
 -----------------------------------------------------------------------------
 '''
-
+#ask user for input
 print("You have $100 and want to play the stock market")
-years = int.input("How many years do you want to keep your money in it")
+years = int(input("How many years do you want to keep your money in it? "))
+
+if years == 0:
+    print("You have $100!")
+elif years <= 0:
+    print("Time mechine not found")
