@@ -31,6 +31,7 @@ elif years <= 0:
 money = 100
 loops = 0
 
+#first checks if years is more then zero then loops and doubles money for every year
 if years > 0:
     print ("Years  Total")
     print("------------")
