@@ -21,18 +21,22 @@ print("You have $100 and want to play the stock market")
 years = int(input("How many years do you want to keep your money in it? "))
 
 
-#Checks if years is more then zero
+#Checks if years is less then zero
 if years == 0:
-    print("yeah the stock market's just too risky anyway")
+    print("yeah the stock market is just too risky anyway")
 elif years <= 0:
     print("Time mechine not found")
 
-
+#sets the vars for loops and money
 money = 100
-#takes the users in put and doubles the money for every year
 loops = 0
-while loops < years + 1:
-    print("Year", loops, money,"$")
-    money = money * 2
-    loops = loops + 1
+
+if years > 0:
+    print ("Years  Total")
+    print("------------")
+    #takes the users input and doubles the money for every year
+    while loops < years + 1:
+        print(loops, "$",money)
+        money *= 2
+        loops += 1
 
