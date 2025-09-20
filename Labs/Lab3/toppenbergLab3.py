@@ -25,7 +25,7 @@ years = int(input("How many years do you want to keep your money in it? "))
 if years == 0:
     print("yeah the stock market is just too risky anyway")
 elif years <= 0:
-    print("Time machine not found")
+    print("Error time machine not found")
 
 #sets the vars for loops and money
 money = 100
