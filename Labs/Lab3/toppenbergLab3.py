@@ -5,7 +5,7 @@ Solution:       toppenbergLab3
 Developer:      Zen Toppenberg
 Course:         Intro to Programming & Logic – CITC-1301-H91
 Creation Date:  9/19/25)
-Last Mod Date:  9/19/25)
+Last Mod Date:  9/20/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
 Purpose - doubles $100 for every year money is kept in the stock matket
