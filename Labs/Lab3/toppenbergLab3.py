@@ -5,7 +5,7 @@ Solution:       toppenbergLab3
 Developer:      Zen Toppenberg
 Course:         Intro to Programming & Logic – CITC-1301-H91
 Creation Date:  9/19/25)
-Last Mod Date:  9/19/25)
+Last Mod Date:  9/20/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
 Purpose - doubles $100 for every year money is kept in the stock matket
@@ -25,7 +25,7 @@ years = int(input("How many years do you want to keep your money in it? "))
 if years == 0:
     print("yeah the stock market is just too risky anyway")
 elif years <= 0:
-    print("Time machine not found")
+    print("Error time machine not found")
 
 #sets the vars for loops and money
 money = 100
