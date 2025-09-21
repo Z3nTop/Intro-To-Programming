@@ -33,11 +33,10 @@ loops = 0
 
 #first checks if years is more then zero then loops and doubles money for every year
 if years > 0:
-    print ("Years  Total")
+    print ("Years     Total")
     print("------------")
     #takes the users input and doubles the money for every year
     while loops < years + 1:
         print(loops, "$",money)
         money *= 2
         loops += 1
-
