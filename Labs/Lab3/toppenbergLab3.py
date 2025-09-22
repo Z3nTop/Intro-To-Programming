@@ -5,7 +5,7 @@ Solution:       toppenbergLab3
 Developer:      Zen Toppenberg
 Course:         Intro to Programming & Logic – CITC-1301-H91
 Creation Date:  9/19/25)
-Last Mod Date:  9/20/25)
+Last Mod Date:  9/21/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
 Purpose - doubles $100 for every year money is kept in the stock matket
@@ -33,10 +33,11 @@ loops = 0
 
 #first checks if years is more then zero then loops and doubles money for every year
 if years > 0:
-    print ("Years     Total")
+    print ("Years  Total")
     print("------------")
     #takes the users input and doubles the money for every year
     while loops < years + 1:
-        print(loops, "$",money)
+        print(loops, "     $", end="") 
+        print(money)
         money *= 2
         loops += 1
