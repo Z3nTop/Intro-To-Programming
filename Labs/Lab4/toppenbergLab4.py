@@ -11,24 +11,26 @@ E-mail Address: nxtoppenberg@senators.ws.edu
 Purpose - <general description of program's purpose>
 -----------------------------------------------------------------------------
 Description of input:
-Number that are not 67 to be added
+Numbers to be add together
 Description of output:
-
+Adds all of the given number
 -----------------------------------------------------------------------------
 '''
 #sets vars for the program
 num = 0
 tottal = 0
-#Takes the user input and adds it to it's self
 
+
+#Takes the user input and adds it to it's self
 while num != 67:
     num = int(input("Enter a positive number… enter 67 to end the program: "))
     if num < 0:
         print("Must me a postive number")
     tottal += num
     
-    
-    
+
+#Need to find a better way to do this
+#Also need to fix that non postive numbers being added
 print(tottal-67)
 
 '''
