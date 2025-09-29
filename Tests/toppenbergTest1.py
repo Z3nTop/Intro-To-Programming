@@ -12,5 +12,5 @@ elif mushroom == 3:
 elif mushroom > 3:
     points = 50
 
-print(name, end='')
-print(", you have collected", mushroom, "magic mushrooms. This earns you", points, "Points!")
+print(name, end=',')
+print(" you have collected", mushroom, "magic mushrooms. This earns you", points, "Points!")
