@@ -26,6 +26,7 @@ while num != 67:
     num = int(input("Enter a positive number… enter 67 to end the program: "))
     if num < 0:
         print("Must me a postive number")
+        num = 0
     tottal += num
     
 
