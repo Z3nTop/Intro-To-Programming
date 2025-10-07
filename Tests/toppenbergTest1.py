@@ -9,7 +9,7 @@ elif mushroom == 2:
     points = 10
 elif mushroom == 3:
     points = 20
-elif mushroom > 3:
+else:
     points = 50
 
 print(name, end='')
