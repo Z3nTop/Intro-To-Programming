@@ -5,15 +5,15 @@ Solution:       toppenbergLab
 Developer:      Zen Toppenberg
 Course:         Intro to Programming & Logic – CITC-1301-H91
 Creation Date:  10/6/25)
-Last Mod Date:  10/7/25)
+Last Mod Date:  10/8/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
 Purpose - Converts human years to dog years useing funtions
 -----------------------------------------------------------------------------
 Description of input:
-<short description of program's inputs>
+Ask the user for a dogs age in human years
 Description of output:
-<short description of program's outputs>
+Outputs the converted number of years 
 -----------------------------------------------------------------------------
 '''
 
@@ -58,7 +58,7 @@ def main():
 loops = True
 
 
-#Starts a loop for the program to 
+#Starts a loop for the program to repeat if the user wants to run it agian
 while loops:
     main()
     testRepeat = True
