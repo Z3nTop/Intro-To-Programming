@@ -18,23 +18,37 @@ Description of output:
 '''
 #inports random and sets random number for the guess
 import random
-number = random.randint(1, 20)
-
-
-
-
-
-isRunning = True
-while isRunning:
-    print(number)
-    guess = int(input("What is your guess? "))
-    if guess == number:
-        isRunning = False
-
+answer = random.randint(1, 20)
+guesses = 0
 
 print("Your lifelong dream is to be on the Jedi Council")
 print("Your opportunity comes and you get an interview with Yoda.")
 print("He asks you to guess a number between 1 and 20.")
+
+
+#Runs a check 
+isRunning = True
+while isRunning:
+    #REWMOVE BEFORE SUMMINTING 
+    print(answer)
+    guess = int(input("What is your guess? "))
+    if guess == answer:
+        isRunning = False
+        guesses += 1
+    elif guess > answer:
+        print("Your guess is too high")
+        guesses += 1
+    else:
+        print("Your guess is too low")
+        guesses += 1
+        
+#Runs the different messages based on the number of guess is
+if guesses <= 3:
+    print("Congratulations, been accepted to the Jedi Council you have")
+else:
+    print("Ready for the Jedi Council you are not. Weak with the force you are!")
+
+
 
 '''
 Your lifelong dream is to be on the Jedi Council.  
