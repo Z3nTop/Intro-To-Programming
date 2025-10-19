@@ -16,3 +16,9 @@ Description of output:
 <short description of program's outputs>
 -----------------------------------------------------------------------------
 '''
+
+
+
+#Calls main
+if __name__ == "__main__":
+    main()
