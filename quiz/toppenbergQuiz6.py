@@ -5,7 +5,7 @@ def max():
     if num1 > num2:
         return num1
     else:
-        return numb2
+        return num2
 
 
 def main():
