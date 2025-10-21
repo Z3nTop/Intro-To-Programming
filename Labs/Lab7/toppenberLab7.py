@@ -11,32 +11,30 @@ E-mail Address: nxtoppenberg@senators.ws.edu
 Purpose - Gives random stats for a character
 -----------------------------------------------------------------------------
 Description of input:
-<short description of program's inputs>
+NONE
 Description of output:
 <short description of program's outputs>
 -----------------------------------------------------------------------------
 '''
+
+
 def main():
     #Inports random
     import random
 
+    
     #Set the starts for the character starts
     stregth = random.randint(1, 18)
     constitution = random.randint(1, 18)
     wisdom = random.randint(1, 18)
     dexterity = random.randint(1, 18)
     charisma = random.randint(1, 18)
+    
+    text = "yoooot"
 
-    #Ask the user for the name
-    name = input("What is your character's name? ")
+    with open("character.txt", 'w') as file:
+        file.write(text)
 
-
-    #Prints the random starts
-    print("Stregth", stregth)
-    print("Constituion", constitution)
-    print("Wisdom", wisdom)
-    print("Dexterity", dexterity)
-    print("Charisma", charisma)
 
 
 
