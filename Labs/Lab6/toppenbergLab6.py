@@ -32,8 +32,6 @@ def main():
     #Runs a check to see if the guessed number is the numbere that was genatraed 
     isRunning = True
     while isRunning:
-        #REWMOVE BEFORE SUMMINTING 
-        print(answer)
         guess = int(input("What is your guess? "))
         guesses += 1
         if guess == answer:
@@ -42,14 +40,16 @@ def main():
             print("Your guess is too high")
         else:
             print("Your guess is too low")
-    return guesses
+
+    #Runs the different messages based on the number of guess is
+    if guesses <= 3:
+        print("Congratulations, been accepted to the Jedi Council you have")
+    else:
+        print("Ready for the Jedi Council you are not. Weak with the force you are!")
 
 
-guesses = main()
+#Calls the mian functions
+if __name__ == '__main__':
+    main()
 
 
-#Runs the different messages based on the number of guess is
-if guesses <= 3:
-    print("Congratulations, been accepted to the Jedi Council you have")
-else:
-    print("Ready for the Jedi Council you are not. Weak with the force you are!")
