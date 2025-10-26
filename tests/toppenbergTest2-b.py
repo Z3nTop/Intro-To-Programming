@@ -24,7 +24,6 @@ def main():
     item_num = 1
     price = 0
     looping = True
-    cash = 0
 
     #Asks the user for the price of the itmes
     print("Put in the price of your itmes when you are done type -1")
@@ -37,13 +36,8 @@ def main():
         item_num += 1
     #Bandaid fix for the -1 beibg added to the total
     total += 1
-    cash = str(input("Are you paying with cash? y/n  "))
-    if cash == 1:
-        print('WIP')
-    else:
-        print("Your total is $", total)
-    
-
+    #Printes the price of all the items witout the round up down to 2 desmess
+    print("Debit/Credit Price: "f'{total:.0f}' "")
 
 #Calls main
 if __name__ == "__main__":
