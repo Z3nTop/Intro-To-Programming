@@ -11,9 +11,9 @@ E-mail Address: nxtoppenberg@senators.ws.edu
 Purpose - <general description of program's purpose>
 -----------------------------------------------------------------------------
 Description of input:
-<short description of program's inputs>
+the price of itmes
 Description of output:
-<short description of program's outputs>
+the total of all prices give and rounded to .05 for cash
 -----------------------------------------------------------------------------
 '''
 
@@ -36,7 +36,7 @@ def main():
         total = total + price
         item_num += 1
 
-    #Bandaid fix for the -1 beibg added to the total
+    #Bandaid fix for the -1 being added to the total
     total += 1
 
     #Printes the price of all the items witout the round up down to 2 desmess
