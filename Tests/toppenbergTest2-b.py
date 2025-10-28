@@ -8,12 +8,12 @@ Creation Date:  10/25/25)
 Last Mod Date:  10/28/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
-Purpose - <general description of program's purpose>
+Purpose - add all of them given prices and show a price for cash or card payments
 -----------------------------------------------------------------------------
 Description of input:
 the price of itmes
 Description of output:
-the total of all prices give and rounded to .05 for cash
+the total of all prices given and rounded to .05 for cash
 -----------------------------------------------------------------------------
 '''
 
@@ -40,8 +40,11 @@ def main():
     total += 1
 
     #Printes the price of all the items witout the round up down to 2 desmess
-    print("Debit/Credit Price: "f'{total:.0f}' "")
-    print(round(total, 2))
+    # print("Debit/Credit Price: "f'{total:.0f}' "")
+    card = round(total, 2) 
+    cash = 0
+    print("Debit/Credit Price:", card) 
+    print("Cash price will be:", cash)
 
 #Calls main
 if __name__ == "__main__":
