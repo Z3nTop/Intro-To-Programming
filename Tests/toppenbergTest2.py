@@ -11,7 +11,7 @@ E-mail Address: nxtoppenberg@senators.ws.edu
 Purpose - add all of them given prices and show a price for cash or card payments
 -----------------------------------------------------------------------------
 Description of input:
-the price of itmes
+the price of items
 Description of output:
 the total of all prices given and rounded to .05 for cash
 -----------------------------------------------------------------------------
@@ -25,26 +25,34 @@ def main():
     price = 0
     looping = True
 
-    #Asks the user for the price of the itmes
-    print("Put in the price of your itmes when you are done type -1")
-    while looping:
+    #Starts a try for erroe checking
+    try:
 
-        #Starts a loop adding the price to total and adds one to the item number
-        price = float(input("Item"f'{item_num}'": "))
-        if price == -1:
-            looping = False
-        total = total + price
-        item_num += 1
+        #Asks the user for the price of the itmes
+        print("Put in the price of your itmes when you are done type -1")
+        while looping:
 
-    #Bandaid fix for the -1 being added to the total
-    total += 1
+            #Starts a loop adding the price to total and adds one to the item number
+            price = float(input("Item"f'{item_num}'": "))
+            if price == -1:
+                looping = False
+            total = total + price
+            item_num += 1
 
-    #Printes the price of all the items witout the round up down to 2 desmess
-    # print("Debit/Credit Price: "f'{total:.0f}' "")
-    card = round(total, 2) 
-    cash = 0
-    print("Debit/Credit Price:", card) 
-    print("Cash price will be:", cash)
+        #Bandaid fix for the -1 being added to the total
+        total += 1
+
+        #Set the price for cash and card payment
+        card = round(total, 2)
+        cash = round(total / 0.05) * 0.05
+        cash = round(cash, 2)
+
+        #Printes the price of all the items witout the round up down to 2 desmess
+        print("Debit/Credit Price:", card) 
+
+    #prints an eroor message if text is given for price
+    except:
+        print("error try agian")
 
 #Calls main
 if __name__ == "__main__":
