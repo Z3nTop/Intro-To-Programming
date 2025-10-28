@@ -42,8 +42,10 @@ def main():
         #Bandaid fix for the -1 being added to the total
         total += 1
 
-        #Set the price for cash and card payment
+        #Set the price for card payment down to 2 desmess
         card = round(total, 2)
+
+        #Sets the price for cash to the lcose nickel then sets it down to 2 desmess
         cash = round(total / 0.05) * 0.05
         cash = round(cash, 2)
 
