@@ -50,7 +50,10 @@ def main():
         cash = round(cash, 2)
 
         #Printes the price of all the items witout the round up down to 2 desmess
-        print("Debit/Credit Price:", card) 
+        print("Debit/Credit Price:", "$", card) 
+        
+        #Prints the price with round up for cash
+        print("Cash Price will be $", cash)
 
     #prints an eroor message if text is given for price
     except:
