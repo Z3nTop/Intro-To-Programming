@@ -17,35 +17,59 @@ Description of output:
 -----------------------------------------------------------------------------
 '''
 
+
 def main():
+        fileName = "biography.html"
 
-    #Asks the user for info
-    name = input("What is your name? ")
-    collage = input("What collage are you going to? ")
-    major = input("What is your major? ")
-    gYear = input("What is your expected graduation year? ")
-    hobs = input("and a sentence describing their hobbies and/or interests. ")
-    
-    writeBiography(name, collage, major, gYear, hobs)
+        #Asks the user for info and cecks for info
+        name = input("What is your name? ")
+        while len(name) == 0:
+            name = input("Must enter 1 letter or more ")
 
-def writeBiography(name, collage, major, gYear, hobs):
+        collage = input("What collage are you going to? ")
+        while len(collage) < 2:
+           collage = input("Must enter 2 letter or more ")
 
-    outputFile = open("biography.html", 'w')
+        major = input("What is your major? ")
+        while len(major) < 2:
+           major = input("Must enter 2 letter or more ")
 
-    #Makes the HTML code
-    outputFile.write("<html>" + "\n")
-    outputFile.write(f"<head><title>" + collage + " student " + name + "</title></head>" + "\n")
-    outputFile.write("<body>" + "\n")
-    outputFile.write(f"<center><h1>{name}</h1></center>" + "\n")
-    outputFile.write(f"<hr />" + "\n")
-    outputFile.write(f"My name is {name}. I am a {major} major at {collage}. I expect to graduate in {gYear}." + "\n")
-    outputFile.write("<br /><br />" + "\n")
-    outputFile.write(f"{hobs}" + "\n")
-    outputFile.write("<hr/>" + "\n")
-    outputFile.write("</body>" + "\n")
-    outputFile.write("</html>")
+        gYear = input("What is your expected graduation year? ")
+        while len(gYear) < 4 or len(gYear) > 4:
+            gYear = input("Must use 2000 year format ")
 
-    outputFile.close()
+        hobs = input("and a sentence describing your hobbies or interests. ")
+
+        writeBiography(fileName, name, collage, major, gYear, hobs)
+
+
+
+def writeBiography(fileName, name, collage, major, gYear, hobs):
+
+        try:
+            outputFile = open("biography.html", 'w')
+
+            #Makes the HTML code
+            outputFile.write("<html>" + "\n")
+            outputFile.write(f"<head><title>" + collage + " student " + name + "</title></head>" + "\n")
+            outputFile.write("<body>" + "\n")
+            outputFile.write(f"<center><h1>{name}</h1></center>" + "\n")
+            outputFile.write(f"<hr />" + "\n")
+            outputFile.write(f"My name is {name}. I am a {major} major at {collage}. I expect to graduate in {gYear}." + "\n")
+            outputFile.write("<br /><br />" + "\n")
+            outputFile.write(f"{hobs}" + "\n")
+            outputFile.write("<hr/>" + "\n")
+            outputFile.write("</body>" + "\n")
+            outputFile.write("</html>")
+
+            #closes the file
+            outputFile.close()
+        except:
+            pirnt("You did somthing wrong try agian")
+
+ 
+
+
 
 #Calls main
 if __name__ == "__main__":
