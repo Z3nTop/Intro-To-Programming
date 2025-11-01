@@ -8,17 +8,18 @@ Creation Date:  10/31/25)
 Last Mod Date:  10/31/25)
 E-mail Address: nxtoppenberg@senators.ws.edu
 -----------------------------------------------------------------------------
-Purpose - <general description of program's purpose>
+Purpose - To make a webpage aobut the user
 -----------------------------------------------------------------------------
 Description of input:
-<short description of program's inputs>
+Infations about them to be used for a website
 Description of output:
-<short description of program's outputs>
+An HTML file with the given information
 -----------------------------------------------------------------------------
 '''
 
-
+#Defons main
 def main():
+        #Sets the name for the file
         fileName = "biography.html"
 
         #Asks the user for info and cecks for info
@@ -43,11 +44,11 @@ def main():
         writeBiography(fileName, name, collage, major, gYear, hobs)
 
 
-
+#Deftions the fruntion for writing the file
 def writeBiography(fileName, name, collage, major, gYear, hobs):
 
         try:
-            outputFile = open("biography.html", 'w')
+            outputFile = open(fileName, 'w')
 
             #Makes the HTML code
             outputFile.write("<html>" + "\n")
@@ -65,11 +66,7 @@ def writeBiography(fileName, name, collage, major, gYear, hobs):
             #closes the file
             outputFile.close()
         except:
-            pirnt("You did somthing wrong try agian")
-
- 
-
-
+            print("You did somthing wrong try agian")
 
 #Calls main
 if __name__ == "__main__":
