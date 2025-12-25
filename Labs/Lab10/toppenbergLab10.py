@@ -4,12 +4,12 @@ def main():
     print("Pig Latin Translator\n")
     print("This program translates the contents of a text file to Pig Latin.\n")
 
-    while True:      
+    while True:
         try:
             # Get file path from user
             filePath = input("File path: ")
 
-            # Attempt to open and read contents of specified file and 
+            # Attempt to open and read contents of specified file and
             # Split the text into a list based on newline character (each line of text becomes an element in list)
             linesList = readFile(filePath).split("\n")
         except Exception as ex:
@@ -17,7 +17,7 @@ def main():
             print(ex)
         else:
             break       # Exit loop if there are no problems
-        # end try        
+        # end try
     # end while
 
     # Translate and add each line to translated list
@@ -38,7 +38,7 @@ def main():
     except Exception as ex:
         # If there is an error writing file
         print(ex)
-    # end try    
+    # end try
 # end function
 
 
@@ -85,14 +85,14 @@ def writeFile(filePath, linesList):
 
 def translateLineToPigLatin(line):
     translatedLine = ""
-    
+
     # If line has one or more character
     if len(line) > 0:
         # If line ends with a newline character, remove it
         if line.endswith("\n"):
             line = line.rstrip("\n")
         # end if
-        
+
         # Split line into a words list based on a space
         wordList = line.split(" ")
 
@@ -111,13 +111,13 @@ def translateWordToPigLatin(word):
     vol = ["a", "e", "i", "o", "u", "y"]
     cons = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
     punct = (".", ",", ":", ";", "?", "!")
-    
+
     #The first letter of a word
     wordStart = word[0]
 
     #Make first letter lower case
     lowStart = wordStart.lower()
-    
+
     #The word starts up with upper case
     startIsCap = (wordStart != lowStart)
 
@@ -132,9 +132,7 @@ def translateWordToPigLatin(word):
 
     #Removes Punc if word has one
     if endsWithPunc:
-        print("Before:", wordRest)
         wordRest = wordRest[0: len(wordRest)-1]
-        print("-->", wordRest)
         punctCh = lastCh
 
 
@@ -154,9 +152,9 @@ def translateWordToPigLatin(word):
         #Checks if the word starts with a Cap and sets it when covered
         if startIsCap:
             pigLatinWord = pigLatinWord[0].upper() + pigLatinWord[1:len(pigLatinWord)]
-    else: 
+    else:
         pigLatinWord = word
-    
+
     return pigLatinWord
 # end function
 
