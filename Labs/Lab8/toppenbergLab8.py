@@ -47,6 +47,7 @@ def main():
 #Deftions the fruntion for writing the file
 def writeBiography(fileName, name, collage, major, gYear, hobs):
 
+        #starts a for error  
         try:
             outputFile = open(fileName, 'w')
 
@@ -65,6 +66,8 @@ def writeBiography(fileName, name, collage, major, gYear, hobs):
 
             #closes the file
             outputFile.close()
+
+        #This runs if the file write crashes
         except:
             print("You did somthing wrong try agian")
 
